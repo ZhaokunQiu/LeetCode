@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/LeetCode" vcs="Git" />
+=======
+    <mapping directory="" vcs="Git" />
+>>>>>>> d5f255ef98a698ce1ebc07e4f5171f20281dad68
   </component>
 </project>
