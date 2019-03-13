@@ -1,6 +1,12 @@
 import javax.lang.model.type.NullType;
+import java.util.LinkedList;
+import java.util.List;
 
 public class DeleteNthNode {
+
+    public static void main(String[] args) {
+        List<Integer> temp =new LinkedList<>();
+    }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head == null) return null;
