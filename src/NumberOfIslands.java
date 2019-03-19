@@ -38,6 +38,7 @@ public class NumberOfIslands {
                 oneSucc(grid,i+1,j);
                 oneSucc(grid,i,j-1);
                 oneSucc(grid,i,j+1);
+
             }
         }
     }
