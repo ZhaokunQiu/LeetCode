@@ -53,4 +53,36 @@ public class TrappingRainWater {
         }
         return sum;
     }
+
+    //巧妙解法
+    public int trap2(int[] height) {
+        int left = 0, right = height.length-1;
+        int ans = 0;
+        int left_max = 0;
+        int right_max = 0;
+
+        while(left<right){
+            if(height[left]<height[right]){ //这里用来保证即使中间都为0，也能够有效的计算蓄水面积
+                if(height[left]>=left_max){
+                    left_max = height[left];
+                }
+                else{
+                    ans += left_max-height[left];
+                }
+                left++;
+            }
+            else{
+                if(height[right]>=right_max){
+                    right_max = height[right];
+                }
+                else{
+                    ans+=right_max-height[right];
+                }
+                right--;
+            }
+        }
+        return ans;
+    }
+
+
 }
