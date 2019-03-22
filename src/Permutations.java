@@ -1,11 +1,16 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class Permutations {
 
     public static void main(String[] args) {
         Permutations p =new Permutations();
+        Queue q =new ArrayBlockingQueue(12);
+
+
         System.out.println(p.permute(new int[]{1,2,3,4}));
     }
 
