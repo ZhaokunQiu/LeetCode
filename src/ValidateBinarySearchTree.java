@@ -1,11 +1,19 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ValidateBinarySearchTree {
 
     public static void main(String[] args) {
 
+        ValidateBinarySearchTree v = new ValidateBinarySearchTree();
+        v.getPara();
+        System.out.println(Parameters.count);
+    }
+
+    public void getPara(){
+        Parameters.count += 89;
     }
 
 
