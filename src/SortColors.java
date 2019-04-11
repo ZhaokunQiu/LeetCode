@@ -1,8 +1,12 @@
+import java.util.LinkedList;
+import java.util.List;
 
 public class SortColors {
 
     public static void main(String[] args) {
         SortColors s = new SortColors();
+        List<Integer> temp  = new LinkedList<>();
+        ((LinkedList<Integer>) temp).addLast(0);
         s.sortColors(new int[]{0,2,1,2,0,0,1,2,1,1,1,0,2,1,2,1,1,1,1,2,1,0,0,0,1,2,2,0,2,1,0,0,1,2,2,
                 1,2,1,0,0,0,0,2,0,2,1,2,1,1,1,1,0,1,2,0,0,0,0,0,0,2,1,1,0,0,1,1,0,0,0,0,1,1,2,2,0,2,1,1,1,2,0,1,1,1,0,2,
                 1,1,2,2,0,1,0,0,1,0,2,2,1,2,1,2,0,0});
