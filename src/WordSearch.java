@@ -1,5 +1,18 @@
+import java.sql.DriverManager;
+
 public class WordSearch {
     boolean[][] flag;
+
+//    private static ThreadLocal<LargestRectangleinHistogram> lrh = new ThreadLocal<>(){
+//        public LargestRectangleinHistogram initialValue(){
+//            return DriverManager.getConnection(DB_URL);
+//        }
+//    }
+    public static void main(String[] args) {
+
+    }
+
+
     public boolean exist(char[][] board, String word) {
         if(word.length()==0)
             return true;
