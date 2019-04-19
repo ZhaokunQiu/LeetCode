@@ -10,6 +10,8 @@ public class WordLadder {
     public static void main(String[] args) {
         String begin = "talk";
         String end = "tail";
+        if('O' == '0')
+            System.out.println("啊啊啊啊");
         List<String> word = new ArrayList<>(
                 Arrays.asList("talk","tons","fall","tail","gale","hall","negs")
         );
