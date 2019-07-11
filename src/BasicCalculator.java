@@ -12,5 +12,7 @@ public class BasicCalculator {
                 case '*':
             }
         }
+        return 0;
     }
+
 }
