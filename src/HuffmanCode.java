@@ -1,3 +1,8 @@
+import net.jcip.annotations.GuardedBy;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 public class HuffmanCode{
     //建立数的节点类
@@ -78,6 +83,9 @@ public class HuffmanCode{
 
     //初始化一个huffuman树
     public static void initHuffmanTree(Node[] huffmanTree,int m){
+        char[] arr = {'a','b'};
+        String temp = Arrays.toString(arr);
+        ArrayList<Integer> tt = new ArrayList<>();
         for(int i=0;i<m;i++){
             huffmanTree[i] = new Node(0,-1,-1,-1);
         }
