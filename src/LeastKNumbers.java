@@ -3,22 +3,12 @@ import java.util.PriorityQueue;
 
 public class LeastKNumbers {
     public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
-        if(input == null || k < input.length)
+        if(input == null || k > input.length)
             return new ArrayList<>();
-        PriorityQueue<Integer> hel = new PriorityQueue<>(k);
-        for(int i = 0; i < k; i++){
-            hel.add(input[i]);
-        }
-        for(int i = k; i < input.length; i++){
-            if(hel.peek() > input[i]){
-                hel.poll();
-                hel.add(input[i]);
-            }
-        }
+        quickSeek(input,0,input.length - 1,k);
         ArrayList<Integer> res = new ArrayList<>(k);
-        for(int i = k - 1; i >= 0; i--){
-            res.set(i,hel.poll());
-        }
+        for(int i = 0; i < k;i++)
+            res.add(input[i]);
         return res;
     }
 
